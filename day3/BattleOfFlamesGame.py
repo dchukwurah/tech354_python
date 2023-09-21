@@ -1,5 +1,6 @@
 import random
 
+# options for choosing character
 fighter_option = {
     1: "Charizard",
     2: "Typhlosion",
@@ -10,6 +11,8 @@ fighter_option = {
     7: "Ninetales"
 }
 
+
+# options for choosing an attack
 attack_option = {
     1: "Fire Blast",
     2: "Flamethrower",
@@ -18,10 +21,12 @@ attack_option = {
 }
 
 
+# dice roll method
 def roll_dice():
     return random.randint(1, 6)
 
 
+# method to retrieve names
 def get_name():
     retrieved_name = True
 
@@ -38,7 +43,7 @@ def select_character():
     print("Select a character:")
     print(fighter_option)
     character_choice = int(
-        input("Which Character do you choose (1-7): "))  # input on the choice for a particular course
+        input("Which Character do you choose (1-7): "))  # input on the choice for a particular character
 
     while character_choice > 7 or character_choice < 0:
         print(
@@ -51,7 +56,7 @@ def select_move():
     print("Select a move:")
     print(attack_option)
     move_choice = int(
-        input("Which move do you choose (1-4): "))  # input on the choice for a particular course
+        input("Which move do you choose (1-4): "))  # input on the choice for a particular move
 
     while move_choice > 4 or move_choice < 1:
         print(
@@ -68,6 +73,7 @@ def cpu_select_move():
 
 
 def play_game():
+    print("Welcome to Battle of Flames!")
     print("Player 1:")
     name = get_name()
     player1 = select_character()
