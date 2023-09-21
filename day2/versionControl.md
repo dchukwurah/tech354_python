@@ -19,15 +19,15 @@
 
 ## Useful Commands
 
--  ```ls -a ``` for hidden files 
+-  `ls -a` for hidden files 
 
 
-- ```git status``` tells you your current files and folders stage i.e. working directory,
+- `git status` tells you your current files and folders stage i.e. working directory,
 
-- ```git commit -m " the message about the commit" ``` allows you to commit with a message so you can know what is your commit and message
+- `git commit -m "the message about the commit" ` allows you to commit with a message so you can know what is your commit and message
 
-- ``` .gitignore ``` will create a file which contains files that git will ignore using './XXX' ```
-- ```git log ``` tells you about your commits 
-- ```Q ```or ```ctrl C ```to exit things
+- `.gitignore` will create a file which contains files that git will ignore using './XXX' ```
+- `git log` tells you about your commits 
+- ```Q`or ```ctrl C ```to exit things
 
 #### Notes from - [Git - What is Git- (git-scm.com).url](..%2F..%2F..%2F..%2FCHIEDO%7E1%2FAppData%2FLocal%2FTemp%2FGit%20-%20What%20is%20Git-%20%28git-scm.com%29.url)
