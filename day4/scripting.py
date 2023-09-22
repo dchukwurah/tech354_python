@@ -9,8 +9,9 @@ import math
 import random
 import datetime
 import json
-# import options from something import something as ST
-# sys - system information
+
+# import options from something import something as ST sys - system information removing toil (manual, repetitive,
+# automatable, TACTICAL DEVOID of enduring value) comes from site reliability engineering
 
 print(sys.version)
 
