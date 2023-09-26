@@ -1,16 +1,16 @@
 
+# Creating SSH keys and Pushing to a new Github REPO
+
+# 1. Creating your .ssh folder
 
 
-# 1. Create a .ssh folder
-
-
-#### Starting in Git bash you will need to go to the start point of your directory by using cd
-#### In here you will need to check if you have a .ssh folder. To do so, enter the following ls -a.
+#### Starting in terminal you will need to go to the home directory by using cd ~
+#### In here you will need to check if you have a .ssh folder. It will be hidden so will need to use ``` ls -a ```
 #### It should appear near the top of the list as it is a hidden file.
-#### If you can see the '.ssh' file then you can skip to step 2.
 #### If there is no file you can create one using mkdir .ssh
+
 # 2. Creating SSH Key!
-[Screenshot 2023-09-26 at 09.55.13.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-09-26%20at%2009.55.13.png)
+[![Screenshot 2023-09-26 at 09.55.13.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-09-26%20at%2009.55.13.png)Screenshot 2023-09-26 at 09.55.13.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-09-26%20at%2009.55.13.png)
 #### Git Bash you want to firstly create your key pairs, to do this you need to use the following command. ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 #### -t rsa sets the type of keygen you require (rsa is default)
 #### -b 4096 determines the byte length
@@ -54,9 +54,9 @@
 #### eval `ssh-agent` (Output: Agent pid ***)
 #### Add in your private key to connect with ssh-add ~/.ssh/id_rsa
 #### Allow access for Github to connect with your ssh key ssh -T git@github.com
-#### Setting your pycharm git repo as your origin link to the GitHub repo git remote add origin git@github.com:LukeWeller7/github_SSH.git
+#### Setting your pycharm git repo as your origin link to the GitHub repo git remote add origin git@github.com:dchukwurah/github_SSH.git
 #### Check that the connection is complete with git remote -v
 #### Expected Output:
 #### origin  git@github.com:dchukwurah/github_SSH.git (fetch)
-#### origin  git@github.com:dchu/github_SSH.git (push)
-#### Save your files and pushing your local repo to GitHub with git add . git commit -m "comment here" git push -u origin main
+#### origin  git@github.com:dchukwurah/github_SSH.git (push)
+#### Save your files and pushing your local repo to GitHub with git add .  -> git commit -m "comment here" -> git push -u origin main
