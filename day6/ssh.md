@@ -1,10 +1,17 @@
+
+
+
 # 1. Create a .ssh folder
+
+
+
+
 #### Starting in Git bash you will need to go to the start point of your directory by using cd
 #### In here you will need to check if you have a .ssh folder. To do so, enter the following ls -a.
 #### It should appear near the top of the list as it is a hidden file.
 #### If you can see the '.ssh' file then you can skip to step 2.
 #### If there is no file you can create one using mkdir .ssh
-# 2. Creating SSH Key
+# 2. Creating SSH Key![Screenshot 2023-09-26 at 09.55.13.png](..%2F..%2F..%2FDesktop%2FScreenshot%202023-09-26%20at%2009.55.13.png)
 #### Git Bash you want to firstly create your key pairs, to do this you need to use the following command. ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 #### -t rsa sets the type of keygen you require (rsa is default)
 #### -b 4096 determines the byte length
